@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/* 아카데미 타이틀 */
+.content_title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+    padding-top: 50px;
+    padding: 0 24px;
+}
+.content_title article {
+    margin-top: 68px;
+    cursor: pointer;
+}
+.content_title h2 {
+    margin-top: 26px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    position: relative;
+}
+.content_title span {
+    display: inline-block;
+    width: 18px;
+}
+
+/* Content */
+.divide {
+    width: 100%;
+    height: 10px;
+    background: #ebebeb;
+}
+#contents {
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 30px 15px;
+}
+#contents .line {
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 10px;
+}
+#contents table {
+    margin: 0 auto;
+    width: 330px;
+    width: 91.66666666666666%;
+    /* (330/360)*100 = 91.66666666666666 */
+    margin-bottom: 32px;
+}
+#contents table tr {
+    height: 53px;
+    vertical-align: middle;
+    text-align: center;
+}
+#contents table tr td span {
+    color: #cb0000;
+    font-size: 1rem;
+    border: 1px solid #cb0000;
+    padding: 0 10px;
+}
+#contents table tr td {
+    font-size: 1.4rem;
+    border-bottom: 1px solid #ebebeb;
+}
+#contents table tr td:first-child {
+    line-height: 53px;
+}
+#contents table tr td:last-child {
+    padding-left: 10px;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Page */
+.page {
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    cursor: pointer;
+}
+.page article {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.page article i {
+    font-size: 1.6rem;
+}
+.page article section {
+    font-size: 0;
+}
+.page article span {
+    border: 1px solid #ebebeb;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+}
+.page article span:first-child {
+    background: #222;
+    color: #eee;
+}
+
+/* Bottom MENU */
+.bottom_menu ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.bottom_menu {
+    padding: 0 !important;
+    cursor: pointer;
+}
+.bottom_menu ul li {
+    width: 33.4%;
+    padding: 12px 0;
+    background-color: #303030;
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+}
+.bottom_menu ul li + li::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1px;
+    height: 30px;
+    margin-top: -14px;
+    background-color: #fff;
+    opacity: 0.2;
+}
+.bottom_menu ul li p {
+    padding-top: 5px;
+    font-size: 1.1rem;
+    color: #777777;
+}

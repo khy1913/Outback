@@ -1,0 +1,209 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* h2의 드롭메뉴 */
+.academy_sub_menu {
+    width: 100%;
+    padding: 20px 15px;
+    background: #f7f7f7;
+    position: absolute;
+    z-index: 99;
+    display: none;
+    border: 1px solid #e6e6e6;
+}
+.academy_sub_menu ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.academy_sub_menu ul li {
+    background: white;
+    font-size: 1.2rem;
+    width: 160px;
+    width: 44.44444444444444%;
+    /* (160/360)*100 = 44.44444444444444 */
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 12px;
+}
+
+/* Contents */
+#contents {
+    font-family: 'Noto Sans KR', sans-serif;
+    height: auto;
+}
+.recommand {
+    padding: 30px 15px;
+}
+.recommand h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+#contents .video_list ul {
+    display: flex;
+    flex-flow: column wrap;
+}
+.video_list ul li {
+    border: 1px solid #e6e6e6;
+    background: #fafafa;
+    padding-bottom: 23px;
+    margin-bottom: 24px;
+}
+.video_list ul li>p {
+    position: relative;
+}
+.video_list ul li>p a{
+    display: inline-block;
+    width: 100%;
+}
+.video_list ul li>p img {
+    width: 328px;
+    width: 100%;
+    /* (328/360)*100 = 91.11111111111111 */
+    height: 100%;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.video_list ul li p .play_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    background: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+.video_list ul li p .play_btn::after {
+    content: '';
+    position: absolute;
+    top: 23px;
+    left: 25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 7px 13px;
+    border-color: transparent transparent transparent #b10a12;
+    cursor: pointer;
+}
+.video_list ul li div {
+    padding: 0 20px;
+}
+.video_list ul li h2 {
+    font-size: 1.6rem;
+    margin-top: 20px;
+    border-bottom: none;
+    margin-bottom: 12px;
+    font-weight: normal;
+}
+.video_list ul li p {
+    color: #999;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+.video_list ul li div p:last-child::after {
+    display: inline-block;
+    content: "| 무료체험하기";
+    font-size: 1.2rem;
+    color: #666;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* 구분선 */
+#contents .divide {
+    width: 100%;
+    height: 10px;
+    background: #ebebeb;
+}
+/* Section 02 */
+.cooking_class {
+    padding: 30px 15px;
+    margin-bottom: 40px;
+}
+.cooking_class h2 {
+    margin-top: 12px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 24px;
+}
+.cooking_class li img {
+    width: 158px;
+    height: 100%;
+}
+.cooking_class li h2 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    border-bottom: none;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.cooking_class ul li div {
+    position: relative;
+}
+.cooking_class ul li div .play_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    background: white;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    margin-top: -13px;
+    margin-left: -13px;
+    cursor: pointer;
+}
+.cooking_class ul li div .play_btn::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    border-style: solid;
+    border-width: 3px 0 3px 6px;
+    border-color: transparent transparent transparent #b10a12;
+    cursor: pointer;
+}
+.cooking_class ul {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.cooking_class ul li p {
+    color: #999;
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+.cooking_class ul li p:last-child span {
+    margin-top: 12px;
+    display: inline-block;
+    color: #999;
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+}
+.cooking_class ul li p:last-child strong {
+    font-weight: 600;
+    color: #777;
+} 
+.cooking_class .line {
+    margin-top: 24px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 32px;
+}
+
